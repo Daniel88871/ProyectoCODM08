@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/logo"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/armasFragment"
+        android:icon="@drawable/logo"
+        android:title="Armas" />
+
+    <item
+        android:id="@+id/ventajasFragment"
+        android:icon="@drawable/logo"
+        android:title="Ventajas" />
+
+    <item
+        android:id="@+id/mejorasFragment"
+        android:icon="@drawable/logo"
+        android:title="Mejoras de campo" />
+</menu>

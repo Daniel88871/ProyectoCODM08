@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/armasFragment">
+
+    <fragment
+        android:id="@+id/armasFragment"
+        android:name="com.example.proyectocodm08.armasFragment"
+        android:label="fragment_armas"
+        tools:layout="@layout/fragment_armas" >
+        <action
+            android:id="@+id/action_armasFragment_to_m4Fragment"
+            app:destination="@id/m4Fragment" />
+        <action
+            android:id="@+id/action_armasFragment_to_kastovFragment"
+            app:destination="@id/kastovFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ventajasFragment"
+        android:name="com.example.proyectocodm08.ventajasFragment"
+        android:label="fragment_ventajas"
+        tools:layout="@layout/fragment_ventajas" >
+        <action
+            android:id="@+id/action_ventajasFragment_to_carroneroFragment"
+            app:destination="@id/carroneroFragment" />
+        <action
+            android:id="@+id/action_ventajasFragment_to_silenciomortalFragment"
+            app:destination="@id/silenciomortalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mejorasFragment"
+        android:name="com.example.proyectocodm08.mejorasFragment"
+        android:label="fragment_mejoras"
+        tools:layout="@layout/fragment_mejoras" >
+        <action
+            android:id="@+id/action_mejorasFragment_to_escudoFragment"
+            app:destination="@id/escudoFragment" />
+        <action
+            android:id="@+id/action_mejorasFragment_to_municionFragment"
+            app:destination="@id/municionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/m4Fragment"
+        android:name="com.example.proyectocodm08.m4Fragment"
+        android:label="fragment_m4"
+        tools:layout="@layout/fragment_m4" />
+    <fragment
+        android:id="@+id/kastovFragment"
+        android:name="com.example.proyectocodm08.kastovFragment"
+        android:label="fragment_kastov"
+        tools:layout="@layout/fragment_kastov" />
+    <fragment
+        android:id="@+id/silenciomortalFragment"
+        android:name="com.example.proyectocodm08.silenciomortalFragment"
+        android:label="fragment_silenciomortal"
+        tools:layout="@layout/fragment_silenciomortal" />
+    <fragment
+        android:id="@+id/carroneroFragment"
+        android:name="com.example.proyectocodm08.carroneroFragment"
+        android:label="fragment_carronero"
+        tools:layout="@layout/fragment_carronero" />
+    <fragment
+        android:id="@+id/escudoFragment"
+        android:name="com.example.proyectocodm08.escudoFragment"
+        android:label="fragment_escudo"
+        tools:layout="@layout/fragment_escudo" />
+    <fragment
+        android:id="@+id/municionFragment"
+        android:name="com.example.proyectocodm08.municionFragment"
+        android:label="fragment_municion"
+        tools:layout="@layout/fragment_municion" />
+</navigation>
