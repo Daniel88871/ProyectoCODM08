@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="212dp"
         android:layout_height="132dp"
-        android:paddingTop="35dp"
+        android:paddingTop="40dp"
         app:srcCompat="@drawable/logo" />
 
 </LinearLayout>

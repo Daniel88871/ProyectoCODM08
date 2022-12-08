@@ -20,4 +20,9 @@
         android:id="@+id/mejorasFragment"
         android:icon="@drawable/logo"
         android:title="Mejoras de campo" />
+
+    <item
+        android:id="@+id/recyclerObjetosFragment"
+        android:icon="@drawable/logo"
+        android:title="Añadir objeto" />
 </menu>

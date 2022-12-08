@@ -20,7 +20,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="319dp"
-        android:layout_height="97dp"
+        android:layout_height="113dp"
         android:text="Un fusil de la familia M4. Este fiable fusil todoterreno tiene un buen desempeño en todo tipo de enfrentamientos"
         android:textAlignment="center"
         android:textColor="@color/white"
