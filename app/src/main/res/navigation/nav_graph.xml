@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/armasFragment">
+    app:startDestination="@id/homeFragment2">
 
     <fragment
         android:id="@+id/armasFragment"
@@ -45,30 +45,69 @@
         android:id="@+id/m4Fragment"
         android:name="com.example.proyectocodm08.m4Fragment"
         android:label="fragment_m4"
-        tools:layout="@layout/fragment_m4" />
+        tools:layout="@layout/fragment_m4" >
+        <action
+            android:id="@+id/action_m4Fragment_to_armasFragment"
+            app:destination="@id/armasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/kastovFragment"
         android:name="com.example.proyectocodm08.kastovFragment"
         android:label="fragment_kastov"
-        tools:layout="@layout/fragment_kastov" />
+        tools:layout="@layout/fragment_kastov" >
+        <action
+            android:id="@+id/action_kastovFragment_to_armasFragment"
+            app:destination="@id/armasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/silenciomortalFragment"
         android:name="com.example.proyectocodm08.silenciomortalFragment"
         android:label="fragment_silenciomortal"
-        tools:layout="@layout/fragment_silenciomortal" />
+        tools:layout="@layout/fragment_silenciomortal" >
+        <action
+            android:id="@+id/action_silenciomortalFragment_to_ventajasFragment"
+            app:destination="@id/ventajasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/carroneroFragment"
         android:name="com.example.proyectocodm08.carroneroFragment"
         android:label="fragment_carronero"
-        tools:layout="@layout/fragment_carronero" />
+        tools:layout="@layout/fragment_carronero" >
+        <action
+            android:id="@+id/action_carroneroFragment_to_ventajasFragment"
+            app:destination="@id/ventajasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/escudoFragment"
         android:name="com.example.proyectocodm08.escudoFragment"
         android:label="fragment_escudo"
-        tools:layout="@layout/fragment_escudo" />
+        tools:layout="@layout/fragment_escudo" >
+        <action
+            android:id="@+id/action_escudoFragment_to_mejorasFragment"
+            app:destination="@id/mejorasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/municionFragment"
         android:name="com.example.proyectocodm08.municionFragment"
         android:label="fragment_municion"
-        tools:layout="@layout/fragment_municion" />
+        tools:layout="@layout/fragment_municion" >
+        <action
+            android:id="@+id/action_municionFragment_to_mejorasFragment"
+            app:destination="@id/mejorasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.proyectocodm08.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_armasFragment2"
+            app:destination="@id/armasFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_ventajasFragment2"
+            app:destination="@id/ventajasFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_mejorasFragment2"
+            app:destination="@id/mejorasFragment" />
+    </fragment>
 </navigation>
